@@ -182,11 +182,18 @@ font-variant: small-caps;
 font-style: normal;
 font-size: 40px;
 cursor: pointer;
-padding: 10px;
+padding: 10px 20px;
 margin: 12px;
 font-family: "Open Sans", sans-serif;
 }
 
+select:hover {
+background: rgba(0,0,0,0.3);
+}
+
+select:active {
+background: white; 
+}
 a {
 color:#c0392b;
 }
