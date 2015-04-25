@@ -1,0 +1,203 @@
+body {
+background: url('title.jpg');
+width: 100%;
+height:  100%;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+display: inline-block;
+margin: 0px;
+}
+
+header {
+background: rgba(0,0,0,0.5);
+width: 100%;
+height: 15%;
+}
+
+.left_part {
+background: rgba(0,0,0,0.2);
+width: 50%;
+height: 70%;
+display: inline-block;
+}
+
+
+.login_form {
+width: 80%;
+height: 75%;
+margin: 10 auto;
+}
+
+.name_txt {
+margin-right: 5%;
+}
+  
+.mail_txt {
+margin-right: 3%;
+}
+
+
+#login_button {
+margin-left: 30%;
+background: rgba(1,0,0,0.7);
+width: 450px;
+height: 450px;
+cursor: pointer;
+border-radius: 50%;
+box-shadow: 0 3px 20px rgba(0,0,0,.25),
+inset 0 2px 0 rgba(255,255,255,.6),
+0 2px 0 rgba(0,0,0,.1),
+inset 0 0 20px rgba(0,0,0,.1);
+}
+ 
+.not_mandatory_information {
+margin-left: 73px;
+}
+ 
+#login_button:hover {
+box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+0 2px 0 rgba(255,255,255,.4),
+inset 0 2px 0 rgba(0,0,0,.1);
+}
+
+#login_button:active { 
+background: white; 
+}
+
+#entry {
+padding-top: 35%;
+display: block;
+text-align: center;
+font-family: "Open Sans", sans-serif;
+font-size: 100px;
+color: #fff; 
+font: 7em 'ChunkFiveRegular'; 
+text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+			   0 20px 20px rgba(0,0,0,.15);
+}
+  
+#hidden {
+display: none;
+}
+
+.user_profile {
+margin:0 20px 20px;
+display: inline-block;
+vertical-align: middle;
+}
+
+.entry_route {
+display: inline-block;
+vertical-align: middle;
+}
+  
+.date {
+height: 70px;
+}
+ 
+p {
+font-size: 40px;
+color: white;
+font-family: "Open Sans", sans-serif;
+display: inline;
+}
+
+.photo {
+border-radius: 50%;
+box-shadow: 0 3px 20px rgba(0,0,0,.25),
+inset 0 2px 0 rgba(255,255,255,.6),
+0 2px 0 rgba(0,0,0,.1),
+inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.profile {
+background: rgba(0,0,0,0.5);
+width: 100%;
+height: 15%;
+display: inline-block;
+}
+
+h2 {
+text-align: center;
+color: white;
+font-family: "Open Sans", sans-serif;
+padding: 40px;
+}
+
+
+input {
+background: rgba(0,0,0,0.7);
+border: 2px solid #cecece;
+border-radius: 12px;
+color: white;
+font-variant: small-caps;
+font-style: normal;
+font-size: 40px;
+cursor: pointer;
+padding: 10px;
+margin: 12px;
+font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-input-placeholder {color:#c0392b;}
+::-moz-placeholder          {color:#c0392b;}/* Firefox 19+ */
+:-moz-placeholder           {color:#c0392b;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#c0392b;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.button_enter {
+margin-left: 17%;
+margin-right: 5%;
+}
+
+input:hover {
+background: rgba(0,0,0,0.3);
+}
+
+input:active {
+background: white; 
+}
+
+select {
+background: rgba(0,0,0,0.7);
+border: 2px solid #cecece;
+border-radius: 12px;
+color: white;
+font-variant: small-caps;
+font-style: normal;
+font-size: 40px;
+cursor: pointer;
+padding: 10px;
+margin: 12px;
+font-family: "Open Sans", sans-serif;
+}
+
+a {
+color:#c0392b;
+}
+
+a:hover {
+color: rgba(0,0,0,0.3);
+}
+
+footer {
+background: rgba(0,0,0,0.8);
+width: 100%;
+height: 20%;
+bottom: 0;
+}

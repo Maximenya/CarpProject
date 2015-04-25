@@ -1,0 +1,42 @@
+<html>
+<head>
+<link href="title.css" rel="stylesheet" type="text/css" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+function input() {
+var b = document.getElementById('hidden');
+var a = document.getElementById('login_button');
+     b.style.display = 'block';
+	 a.style.display = 'none';
+	 var t = this;
+    }
+</script>
+</head>
+<body>
+
+<header>
+<div class="project_logo"><h2> CarpProject</h2></div>
+</header>
+
+<div class="login_form">
+<div id="login_button" onClick = 'input()'><p id="entry">Вход</p></div>
+<div id="hidden">
+<h2>
+<form name = "form1" action = "home.html" method = "post">
+<p class="name_txt">Ваше имя:</p> <input   type = "text" name = "firstname"  placeholder = "New Carp">
+    <br>
+<p>Ваш пароль:</p> <input type = "password" name = "pass"  placeholder = "••••••••••">
+	<br>
+<input type = "submit" value = "Войти" class="button_enter">
+<a target = "_self" href="title_reg.html" title="Зарегистрироваться" class="reg">Зарегистрироваться</a>	
+</form>
+</h2>
+</div>
+</div>
+
+<footer>
+</footer>
+
+
+</body>
+</html>
