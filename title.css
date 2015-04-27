@@ -22,6 +22,27 @@ height: 70%;
 display: inline-block;
 }
 
+.right_part {
+background: rgba(0,0,0,0.2);
+float: right;
+width: 50%;
+height: 70%;
+}
+
+.saved_information {
+width: 83%;
+height: 69%;
+background: rgba(0,0,0,0.7);
+border: 2px solid #cecece;
+border-radius: 12px;
+color: white;
+font-variant: small-caps;
+font-style: normal;
+font-size: 40px;
+padding: 10px;
+margin: 12px;
+font-family: "Open Sans", sans-serif;
+}
 
 .login_form {
 width: 80%;
