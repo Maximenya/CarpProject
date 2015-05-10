@@ -1,0 +1,13 @@
+﻿@using Carp.Models
+@model Message
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Warning";
+}
+
+<div class="jumbotron">
+   <a href="/">Home</a>
+</div>
+<div class="row">
+    <h3 class="@Model.Status.ToString().ToLower()">@Model.Value</h3>
+</div>
