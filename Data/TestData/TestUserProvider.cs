@@ -42,7 +42,6 @@ namespace Carp.Data.TestData
 
             var newUser = new User(newId)
             {
-                Claims = user.Claims,
                 Email = user.Email,
                 BirthYear = user.BirthYear,
                 Gender = user.Gender,

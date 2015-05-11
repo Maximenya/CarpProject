@@ -18,6 +18,7 @@ namespace Carp.Controllers
         private IUserProvider _userProvider;
 
         private User _cachedUser;
+        private const string UserIdClaimType = "UserId";
         protected User CurrentUser
         {
             get
@@ -26,7 +27,7 @@ namespace Carp.Controllers
                 {
                     if (Context.User != null && Context.User.Identity.IsAuthenticated)
                     {
-                        var userId = int.Parse(Context.User.Claims.Where(c => c.Type == ClaimType.UserId.ToString()).Single().Value);
+                        var userId = int.Parse(Context.User.Claims.Where(c => c.Type == UserIdClaimType).Single().Value);
                         _cachedUser = _userProvider.Get(userId);
                     }
                 }
@@ -42,9 +43,9 @@ namespace Carp.Controllers
         protected void SignIn(User user)
         {
             var claims = user.Claims;
-            if(claims.Where(c=>c.Type == ClaimType.UserId.ToString()).Count() == 0)
+            if(claims.Where(c=>c.Type == UserIdClaimType).Count() == 0)
             {
-                claims.Add(new Claim(ClaimType.UserId.ToString(), user.Id.ToString()));
+                claims.Add(new Claim("UserId", user.Id.ToString()));
             }
 
             CurrentUser = user;

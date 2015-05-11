@@ -27,10 +27,5 @@ namespace Carp.Logic.Entities
 
         public Gender Gender { get; set; }
 
-        /// <summary>
-        /// список прав пользователя, например: "Сontest":"111" означает,
-        /// что он является создателем этапа с Id=111 и может его редактировать 
-        /// </summary>
-        public IList<Claim> Claims { get; set; }
-    }
+         }
 }

@@ -45,7 +45,6 @@ namespace Carp.Data.TestData
                 var testUser = new User
                 {
                     BirthYear = rand.Next(1960, 2012),
-                    Claims = new List<Claim>(),
                     Email = testName.Replace(" ", string.Empty).ToLower() + "@carp.org",
                     Gender = (Gender)rand.Next(0, 2),
                     Name = _testNames[rand.Next(0, 19)],
