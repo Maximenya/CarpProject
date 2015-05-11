@@ -5,7 +5,7 @@ using Microsoft.AspNet.Http;
 using Carp.Data.Abstractions;
 using Carp.Data.TestData;
 
-namespace HelloMvc
+namespace Carp
 {
     public class Startup
     {
