@@ -1,0 +1,38 @@
+body {
+	background-color: #eee9bf;
+	font: medium/1.6em Verdana, Arial, Helvetica, sans-serif;
+	color: black;
+}
+.header {
+	background-color: rgba(65, 105, 225, 0.7); 
+	margin: 10px 30px 20px 30px;
+	border-radius: 10px;
+	padding: 0px 10px 0px 10px;
+	opacity: 0.8;
+}
+.act_comp {
+	background-color: #87ceeb;
+	padding: 0px 20px 20px 20px;
+	margin: 0px 10px 10px 30px;
+	border-radius: 10px;
+	width: 300px;
+	float: left;
+}
+.reg_form {
+	background-color: #87ceeb;
+	width: 350px;
+	padding: 0px 20px 20px 20px;
+	margin: 0px 30px 10px 20px;
+	border-radius: 10px;
+	float: right;
+}
+.page_content {
+	background-color: #9370db;
+	margin: 0px 440px 0px 380px;
+	padding: 1px 10px 10px 10px;
+	border-radius: 10px;
+}
+th {
+	font-weight: normal;
+	text-align: right;
+}
