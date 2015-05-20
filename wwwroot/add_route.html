@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Climbing Calculation</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script>	
+var rout_list = [false, false, false, false, false];
+			
+			function checkboxer(rout_list) {
+				var rout_list = [false, false, false, false, false];
+				for(var i = 0; i < rout_list.length; i++) {
+					var box = document.getElementById('select_routes');
+					var checkbox = document.createElement('input');
+					checkbox.setAttribute("type", "checkbox");
+					box.appendChild(checkbox);
+					}
+					
+				}
+window.onload = checkboxer;
+		</script>
+			
+</head>
+<body>
+	<div class="header">
+		<h1>Climbing Calculation</h1>
+	</div>
+	<div class="name_competition">
+		<h2>Name competition</h2>
+	</div>
+	<div>
+		<ul>
+			<li id="select_routes">1<input type="checkbox" name="routes10" value="10"></input></li>
+		</ul>
+		
+	</div>
+</body>
+</html>
