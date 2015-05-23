@@ -5,19 +5,41 @@
 	<title>Climbing Calculation</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 		<script>	
-var rout_list = [false, false, false, false, false];
-			
-			function checkboxer(rout_list) {
-				var rout_list = [false, false, false, false, false];
-				for(var i = 0; i < rout_list.length; i++) {
+var routes_list = [{namber: 1, done: false},
+				{namber: 2, done: true},
+				{namber: 3, done: false},
+				{namber: 4, done: false},
+				{namber: 5, done: false},];
+			function onclick (e) {
+				var checkbox = this;
+				checkbox.rout.done = checkbox.checked;
+				
+			}
+			function checkboxer(x) {
+				
+				for(var i = 0; i < x.length; i++) {
 					var box = document.getElementById('select_routes');
+					var li = document.createElement('li');
+					var num = document.createTextNode((i+1)+"."); 
+					 
 					var checkbox = document.createElement('input');
+					li.appendChild(num);
+					li.appendChild(checkbox);
 					checkbox.setAttribute("type", "checkbox");
-					box.appendChild(checkbox);
+					checkbox.setAttribute("name", "route"+i);
+					checkbox.setAttribute("id", "route"+i);
+					if (x[i].done) {
+						checkbox.setAttribute("checked", "checked");
+					}
+					box.appendChild(li);
+					checkbox.rout = x[i];
+					checkbox.onclick = onclick;
 					}
 					
+					console.log(typeof onclick);
+						
 				}
-window.onload = checkboxer;
+
 		</script>
 			
 </head>
@@ -29,10 +51,14 @@ window.onload = checkboxer;
 		<h2>Name competition</h2>
 	</div>
 	<div>
-		<ul>
-			<li id="select_routes">1<input type="checkbox" name="routes10" value="10"></input></li>
+		<form>
+		<ul id="select_routes">
+			
 		</ul>
-		
+		</form>
 	</div>
+	<script>
+		checkboxer(routes_list);
+	</script>
 </body>
 </html>
