@@ -16,8 +16,7 @@ var routes_list = [{namber: 1, done: false},
 				
 			}
 			function checkboxer(x) {
-				
-				for(var i = 0; i < x.length; i++) {
+				routes_list.forEach(function(item, i, routes_list) {
 					var box = document.getElementById('select_routes');
 					var li = document.createElement('li');
 					var num = document.createTextNode((i+1)+"."); 
@@ -34,9 +33,7 @@ var routes_list = [{namber: 1, done: false},
 					box.appendChild(li);
 					checkbox.rout = x[i];
 					checkbox.onclick = onclick;
-					}
-					
-					console.log(typeof onclick);
+				});
 						
 				}
 
