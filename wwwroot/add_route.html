@@ -10,29 +10,31 @@ var routes_list = [{namber: 1, done: false},
 				{namber: 3, done: false},
 				{namber: 4, done: false},
 				{namber: 5, done: false},];
-			function onclick (e) {
+			function onchange (e) {
 				var checkbox = this;
-				checkbox.rout.done = checkbox.checked;
+				checkbox.route.done = checkbox.checked;
+				
 				
 			}
-			function checkboxer(x) {
-				routes_list.forEach(function(item, i, routes_list) {
+			function checkboxer(list) {
+				list.forEach(function(route, list) {
 					var box = document.getElementById('select_routes');
 					var li = document.createElement('li');
-					var num = document.createTextNode((i+1)+"."); 
+					var num = document.createTextNode((route.namber)+"."); 
 					 
 					var checkbox = document.createElement('input');
 					li.appendChild(num);
 					li.appendChild(checkbox);
 					checkbox.setAttribute("type", "checkbox");
-					checkbox.setAttribute("name", "route"+i);
-					checkbox.setAttribute("id", "route"+i);
-					if (x[i].done) {
+					checkbox.setAttribute("name", "route"+route.namber);
+					checkbox.setAttribute("id", "route"+route.namber);
+					if (route.done) {
 						checkbox.setAttribute("checked", "checked");
 					}
 					box.appendChild(li);
-					checkbox.rout = x[i];
-					checkbox.onclick = onclick;
+					checkbox.route = route;
+					checkbox.onchange = onchange;
+					
 				});
 						
 				}
