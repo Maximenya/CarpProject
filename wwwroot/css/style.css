@@ -25,6 +25,7 @@ body {
 	margin: 0px 30px 10px 20px;
 	border-radius: 10px;
 	float: right;
+	display: block;
 }
 .page_content {
 	background-color: #9370db;
