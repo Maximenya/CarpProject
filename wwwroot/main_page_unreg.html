@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>Climbing Calculation</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<script src="js/forMain.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -15,7 +14,7 @@
 		<p class="competition_name">VentoCup <button>Участвовать</button> </p>
 		<p class="competition_name">БолдЫрCup <button>Участвовать</button> </p>
 	</div>
-	<div class="reg_form">
+	<div class="reg_form hidden" id="reg_form">
 		<h2>Зарегистрироваться</h2>
 		<form name="register" action="" method="post">
 			<table>
@@ -96,7 +95,7 @@
 					</td>
 				</tr>
 			</table>
-			<input type="button" id="regisration"  value="Зарегестрироваться">	
+			<input type="submit"  value="Зарегестрироваться">
 		</form>
 	</div>
 	<div class="page_content">
@@ -113,7 +112,10 @@
 				</tr>
 			</table>
 			<input type="submit" value="Войти">
+            <button type = "button" id="registration">Registration</button>
 		</form>
-	</div>
+        <script src="js/forMain.js"></script>
+
+    </div>
 </body>
 </html>

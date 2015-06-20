@@ -1,5 +1,5 @@
-window.onload = function () {
- document.getElementById('regisration').onclick = function () {
- document.getElementsByClassName('reg_form')[0].style.display = 'none';
-};
+
+ document.getElementById('registration').onclick = function () {
+    document.getElementById('reg_form').className = "";
+    document.getElementById('reg_form').className = "reg_form";
 };
