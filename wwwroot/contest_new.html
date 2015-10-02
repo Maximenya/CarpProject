@@ -1,43 +1,60 @@
+﻿
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-    <title>CarpProject</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Creat new competition</title>
     <link type="text/css" rel="stylesheet" href="/css/title.css" />
   </head>
 
-<b�d�>
+<bоdу>
 
 <header>
 		<div class="project_logo">
 
         <h2> CarpProject</h2>
           <p>
-          <img src="logo/logo.jpg" alt="�������">
+           <img src="img/new_competition.jpg" alt="Новое соревнование" />
           </p>
 
 </div>
 </header>
 
+
 <div class="new_competition">
+		<h2>
+			<form name = "form_new_competition" action = "new_competiton.php" method = "post">
 
-    <p>������� ����� ������������</p>
-<p>
 
- <a href="html/new_competition.html">
-<img src="thumbnails/new_competition.jpg"
-alt="������� ����� ������������">
+                                 <p> Новое соревнование </p>
 
-</a>
+				<p class="new_competition_txt">Название соревнования:</p>
+				<input   type ="text" name = "new_competiton"  placeholder = "Новое соревнование">
+    			<br />
+				<p>Срок проведения:</p>
+                                <p class="term_txt"> c:</p>
+				<input type = "text" name ="date_from"  placeholder = "дд.мм.гг" />
+                                <p class="term_txt"> по: </p>
+                                <input type = "text" name ="date_to"  placeholder = "дд.мм.гг" />
+				<br />
 
-</p>
+				<p class="routes_txt">Выберите маршруты:</p>
 
+                                <input type="checkbox" name="routes1" value="1" />1
+                                <input type="checkbox" name="routes2" value="2" />2
+                                <br />
+                                <p>
+				<input type = "submit" value = "Создать" class="button" />
+                                </p>
+			</form>
+                     </h2>
+                     </div>
          <footer>
 	</footer>
 
 </body>
 </html>
-
-
